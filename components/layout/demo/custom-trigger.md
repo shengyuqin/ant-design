@@ -49,6 +49,11 @@ class SiderDemo extends React.Component {
               <span className="nav-text">nav 3</span>
             </Menu.Item>
           </Menu>
+           <Menu.Item key="4">
+              <Icon type="upload" />
+              <span className="nav-text">nav 3</span>
+            </Menu.Item>
+          </Menu>
         </Sider>
         <Layout>
           <Header style={{ background: '#fff', padding: 0 }}>
