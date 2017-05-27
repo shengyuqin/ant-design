@@ -25,7 +25,14 @@ class SiderDemo extends React.Component {
     this.setState({
       collapsed: !this.state.collapsed,
     });
-  }
+  };
+  onCollapse = (collapsed) => {
+        console.log(collapsed);
+        this.setState({
+            mode: collapsed ? 'vertical' : 'inline',
+        });
+    };
+    menuC
   render() {
     return (
       <Layout>
@@ -33,6 +40,7 @@ class SiderDemo extends React.Component {
           trigger={null}
           collapsible
           collapsed={this.state.collapsed}
+          onCollapse={this.onCollapse}
         >
           <div className="logo" />
           <Menu theme="dark" mode="inline" defaultSelectedKeys={['1']}>
